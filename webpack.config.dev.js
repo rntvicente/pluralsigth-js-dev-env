@@ -1,6 +1,6 @@
-import path from 'path';
+path = require('path');
 
-export default {
+module.exports = {
   debug: true,
   devtool: 'inline-source-map',
   noInfo: false,
@@ -10,7 +10,6 @@ export default {
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'lib'),
-    publicPath: '/',
     filename: 'bundle.js'
   },
   plugins: [],
