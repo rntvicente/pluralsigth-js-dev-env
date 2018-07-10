@@ -8,16 +8,21 @@
     "open:src": "node server.js",
     "security-check": "nsp check",
     "localtunnel": "lt --port 3000",
-    "share": "npm-run-all --parallel open:src localtunnel"
+    "share": "npm-run-all --parallel open:src localtunnel",
+    "lint": "esw  webpack.config.*  lib --color"
   },
   "author": "Cory House",
   "license": "MIT",
   "dependencies": {
     "whatwg-fetch": "1.0.0"
   },
+  "engines": {
+    "node": "8.9.3"
+  },
   "devDependencies": {
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
+    "babel-eslint": "^8.2.5",
     "babel-loader": "6.2.5",
     "babel-preset-latest": "6.16.0",
     "babel-register": "6.16.3",
@@ -29,6 +34,7 @@
     "css-loader": "0.25.0",
     "eslint": "3.8.1",
     "eslint-plugin-import": "2.0.1",
+    "eslint-plugin-react": "^7.10.0",
     "eslint-watch": "2.1.14",
     "express": "4.14.0",
     "extract-text-webpack-plugin": "1.0.1",
