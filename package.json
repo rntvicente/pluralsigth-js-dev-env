@@ -9,7 +9,9 @@
     "security-check": "nsp check",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel open:src localtunnel",
-    "lint": "esw  webpack.config.*  lib --color"
+    "lint": "esw  webpack.config.* server.js lib --color",
+    "lint:watch": "npm run lint -- --watch",
+    "mocha": "mocha --reporter progress \"lib/**/*-test.js\""
   },
   "author": "Cory House",
   "license": "MIT",
