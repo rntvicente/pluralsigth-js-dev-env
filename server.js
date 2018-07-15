@@ -13,7 +13,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
 }));
 
-app.get('/', (req, res, next) => {
+app.get('/', (req, res) => {
   res.sendfile(path.join(__dirname, './lib/index.html'));
 });
 
