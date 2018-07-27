@@ -16,9 +16,6 @@
   },
   "author": "Cory House",
   "license": "MIT",
-  "engines": {
-    "node": "8.9.3"
-  },
   "devDependencies": {
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",

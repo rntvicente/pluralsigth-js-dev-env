@@ -5,11 +5,11 @@ module.exports = {
   devtool: 'inline-source-map',
   noInfo: false,
   entry: [
-    path.resolve(__dirname, 'lib/index')
+    path.resolve(__dirname, 'src/index')
   ],
   target: 'web',
   output: {
-    path: path.resolve(__dirname, 'lib'),
+    path: path.resolve(__dirname, 'src'),
     filename: 'bundle.js'
   },
   plugins: [],
